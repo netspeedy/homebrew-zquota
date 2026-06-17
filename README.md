@@ -46,4 +46,6 @@ This repository only packages the formula at [`Formula/zquota.rb`](Formula/zquot
 
 ## License
 
-MIT — see [LICENSE](LICENSE). `zquota` is an unofficial tool and is not affiliated with [Z.ai](https://z.ai).
+Copyright © 2026 [Simon Oakes](https://github.com/soakes). Released under the [MIT License](LICENSE).
+
+This tap only packages the [zquota](https://github.com/netspeedy/zquota) formula, an unofficial community tool that is not affiliated with, endorsed by, or sponsored by [Z.ai](https://z.ai).
