@@ -1,6 +1,22 @@
-# homebrew-zquota
+<p align="center">
+  <img src="logo.svg" width="96" height="96" alt="zquota">
+</p>
 
-Homebrew tap for [**zquota**](https://github.com/netspeedy/zquota) — a fast, zero-dependency terminal CLI for Z.ai quota usage and exact reset times.
+<h1 align="center">homebrew-zquota</h1>
+
+<p align="center">
+  Homebrew tap for <a href="https://github.com/netspeedy/zquota"><strong>zquota</strong></a> — a fast, zero-dependency terminal CLI for Z.ai quota usage and exact reset times.
+</p>
+
+<p align="center">
+  <a href="https://github.com/netspeedy/zquota/releases"><img src="https://img.shields.io/github/v/release/netspeedy/zquota?sort=semver&style=flat-square" alt="Release"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-2EA043?style=flat-square" alt="License"></a>
+  <a href="https://github.com/netspeedy/homebrew-zquota"><img src="https://img.shields.io/badge/Homebrew-tap-FFDD00?style=flat-square&logo=homebrew&logoColor=black" alt="Homebrew tap"></a>
+  <a href="https://github.com/netspeedy/zquota"><img src="https://img.shields.io/badge/source-netspeedy%2Fzquota-00897B?style=flat-square" alt="Source"></a>
+  <a href="https://buymeacoffee.com/soakes"><img src="https://img.shields.io/badge/Buy%20Me%20a%20Coffee-support-FFDD00?style=flat-square&logo=buymeacoffee&logoColor=000000" alt="Buy Me a Coffee"></a>
+</p>
+
+---
 
 ## Install
 
@@ -17,6 +33,12 @@ Set your API key and run:
 export ZQUOTA_API_KEY='your-api-key'
 zquota
 ```
+
+## Available formulae
+
+| Formula | Description |
+|---|---|
+| [`zquota`](Formula/zquota.rb) | Z.ai quota usage and reset-time CLI |
 
 ## About this tap
 
