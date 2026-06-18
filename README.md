@@ -30,7 +30,7 @@ brew install zquota
 Set your API key and run:
 
 ```bash
-export ZQUOTA_API_KEY='your-api-key'
+export ZAI_API_KEY='your-api-key'
 zquota
 ```
 
