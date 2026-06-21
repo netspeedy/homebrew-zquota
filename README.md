@@ -1,11 +1,5 @@
 <p align="center">
-  <img src="logo.svg" width="96" height="96" alt="zquota">
-</p>
-
-<h1 align="center">homebrew-zquota</h1>
-
-<p align="center">
-  Homebrew tap for <a href="https://github.com/netspeedy/zquota"><strong>zquota</strong></a> — a fast, zero-dependency terminal CLI for Z.ai quota usage and exact reset times.
+  <img src="assets/zquota-readme-hero.png" width="960" alt="zquota - Fast zero-dependency CLI for Z.ai quota usage">
 </p>
 
 <p align="center">
