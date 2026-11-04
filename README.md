@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/zquota-readme-hero.png" width="960" alt="zquota - Fast zero-dependency CLI for Z.ai quota usage">
+  <img src="assets/zquota-readme-hero.svg" width="960" alt="zquota - no quota guesswork, exact reset times. Your Z.ai plan, usage bars and the exact reset time for every rolling window.">
 </p>
 
 <p align="center">
@@ -12,6 +12,8 @@
 
 ---
 
+This is the Homebrew tap for [zquota](https://github.com/netspeedy/zquota). zquota shows how much of your Z.ai quota you've used and exactly when each window resets, including the five-hour rolling window that Z.ai's own charts make hard to read.
+
 ## Install
 
 ```bash
@@ -19,24 +21,57 @@ brew tap netspeedy/zquota
 brew install zquota
 ```
 
+The formula installs the single-file CLI on macOS and Linux and runs it on Homebrew's Python.
+
 > On recent Homebrew, new third-party taps require explicit trust. If installation is refused, run `brew trust netspeedy/zquota` once, then `brew install zquota`.
 
-Set your API key and run:
+## Try it
+
+Set your API key and run it:
 
 ```bash
 export ZAI_API_KEY='your-api-key'
 zquota
 ```
 
+You get your plan and a block for each quota window:
+
+```text
+  Z.ai plan: pro
+
+  │  5-Hour Rolling Token Quota
+  │
+  │  [████████████░░░░░░░░░░░░] 50% used
+  │  Remaining: 50%
+  │  Limit:      1.0M
+  │  Used:       500.0k
+  │  Remaining:  500.0k
+  │  Resets in:   30m
+  │  Resets at:   2026-05-23 15:00:00 BST
+  ──────────────────────────────────
+```
+
+`--compact` gives one line per quota, `--json` and `--jsonl` are there for scripts, `--watch 30` refreshes every 30 seconds, and `--threshold 80` exits with code 2 once any window reaches 80%. Reset times are shown in `Europe/London` unless you pass `--timezone` or set `ZAI_TIMEZONE`. The [usage guide](https://github.com/netspeedy/zquota/blob/main/docs/usage.md) has the rest.
+
+## Upgrade or remove
+
+```bash
+brew upgrade zquota
+brew uninstall zquota
+brew untap netspeedy/zquota
+```
+
 ## Available formulae
 
 | Formula | Description |
 |---|---|
-| [`zquota`](Formula/zquota.rb) | Z.ai quota usage and reset-time CLI |
+| [`zquota`](Formula/zquota.rb) | Z.ai quota monitor with terminal and JSON output |
 
 ## About this tap
 
-This repository only packages the formula at [`Formula/zquota.rb`](Formula/zquota.rb). It is updated automatically on each [zquota release](https://github.com/netspeedy/zquota/releases). For source code, issues, and documentation, see the [main repository](https://github.com/netspeedy/zquota).
+This repository only packages [`Formula/zquota.rb`](Formula/zquota.rb). The zquota release workflow rewrites it for each stable [release](https://github.com/netspeedy/zquota/releases); release candidates aren't published here. The signed APT repository, pip and the standalone script are described in the [main README](https://github.com/netspeedy/zquota#install). Please open issues in the [main repository](https://github.com/netspeedy/zquota/issues).
+
+The banner at the top of this page is generated. Edit the copy, layout or timing in `.github/scripts/build_readme_hero.py` and run it to rebuild `assets/zquota-readme-hero.svg`. It downloads the font subsets from Google Fonts, so it needs network access.
 
 ## License
 
