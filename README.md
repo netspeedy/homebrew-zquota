@@ -71,7 +71,7 @@ brew untap netspeedy/zquota
 
 This repository only packages [`Formula/zquota.rb`](Formula/zquota.rb). The zquota release workflow rewrites it for each stable [release](https://github.com/netspeedy/zquota/releases); release candidates aren't published here. The signed APT repository, pip and the standalone script are described in the [main README](https://github.com/netspeedy/zquota#install). Please open issues in the [main repository](https://github.com/netspeedy/zquota/issues).
 
-The banner at the top of this page is generated. Edit the copy, layout or timing in `.github/scripts/build_readme_hero.py` and run it to rebuild `assets/zquota-readme-hero.svg`. It downloads the font subsets from Google Fonts, so it needs network access.
+The banner at the top of this page and the repository's social preview image are generated. Edit the copy, layout or timing in `.github/scripts/build_readme_hero.py` and run it to rebuild `assets/zquota-readme-hero.svg` and `assets/zquota-social-preview.png`; the preview is uploaded by hand under Settings, since GitHub has no API for it. The script downloads the font subsets from Google Fonts, so it needs network access, and renders the preview with headless Chrome or Chromium.
 
 ## License
 
