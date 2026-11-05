@@ -3,8 +3,8 @@ class Zquota < Formula
 
   desc "Z.ai quota monitor with terminal and JSON output"
   homepage "https://github.com/netspeedy/zquota"
-  url "https://github.com/netspeedy/zquota/releases/download/v0.1.3/zquota-0.1.3.tar.gz"
-  sha256 "4fd0b81c373469bb182c30bcb25d5e90541b262de503fce72d697cae30855bf2"
+  url "https://github.com/netspeedy/zquota/releases/download/v0.1.4/zquota-0.1.4.tar.gz"
+  sha256 "0f1f08eafe264bc1ddf443f9bee700a46d957a89c22e6f7239d58f0bbf330cf8"
   license "MIT"
 
   depends_on "python@3.13"
